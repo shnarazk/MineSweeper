@@ -11,6 +11,17 @@ import SwiftData
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
+    let contents = [
+        [" ", "1", "💣", "?", "?", "?", "?", "?", "?"],
+        ["?", "?", "?", "?", "?", "?", "?", "?", "?"],
+        ["?", "?", "?", "?", "?", "?", "?", "?", "?"],
+        ["?", "?", "?", "?", "?", "?", "?", "?", "?"],
+        ["?", "?", "?", "?", "?", "?", "?", "?", "?"],
+        ["?", "?", "?", "?", "?", "?", "?", "?", "?"],
+        ["?", "?", "?", "?", "?", "?", "?", "?", "?"],
+        ["?", "?", "?", "?", "?", "?", "?", " ", "?"],
+        ["?", "?", "?", "?", "?", "?", "?", "?", "?"],
+    ]
 
     var body: some View {
         VStack {
@@ -18,39 +29,18 @@ struct ContentView: View {
             ForEach(0...8, id: \.self) {y in
                 HStack {
                     ForEach(0...8, id: \.self) {x in
-                        // Rectangle()
                         ZStack {
-                            RoundedRectangle(cornerRadius: 4).background(Color.blue)
-                            Text("?").font(.title).padding(1).colorInvert()
+                            Text(contents[y][x]).font(.title).padding(1)
+                                .frame(width: 30, height: 30, alignment: .center)
+                                .fixedSize(horizontal: true, vertical: true)
+                                .border(.fill)
+                                
                         }
                     }
                 }
             }.padding(.horizontal)
             Spacer()
         }
-        // Rectangle().padding(30)
-        // NavigationSplitView {
-//            List {
-//                ForEach(items) { item in
-//                    NavigationLink {
-//                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-//                    } label: {
-//                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-//                    }
-//                }
-//                .onDelete(perform: deleteItems)
-//            }
-           // .navigationSplitViewColumnWidth(min: 180, ideal: 200)
-//            .toolbar {
-//                ToolbarItem {
-//                    Button(action: addItem) {
-//                        Label("Add Item", systemImage: "plus")
-//                    }
-//                }
-//            }
-        // } detail: {
-        //    Text("Select an item")
-        //}
     }
 
     private func addItem() {

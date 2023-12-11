@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C16E14BE2B27086100398B73 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E14BD2B27086100398B73 /* Grid.swift */; };
+		C16E14C02B2708B600398B73 /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E14BF2B2708B600398B73 /* GridLayout.swift */; };
+		C16E14C22B270A3E00398B73 /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C16E14C12B270A3E00398B73 /* Array+Identifiable.swift */; };
 		C1D06A6E2B256D7800DE13CC /* MineSweeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D06A6D2B256D7800DE13CC /* MineSweeperApp.swift */; };
 		C1D06A702B256D7800DE13CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D06A6F2B256D7800DE13CC /* ContentView.swift */; };
 		C1D06A722B256D7800DE13CC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D06A712B256D7800DE13CC /* Item.swift */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C16E14BD2B27086100398B73 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		C16E14BF2B2708B600398B73 /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
+		C16E14C12B270A3E00398B73 /* Array+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
 		C1D06A6A2B256D7800DE13CC /* MineSweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MineSweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1D06A6D2B256D7800DE13CC /* MineSweeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineSweeperApp.swift; sourceTree = "<group>"; };
 		C1D06A6F2B256D7800DE13CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,9 @@
 				C1D06A6D2B256D7800DE13CC /* MineSweeperApp.swift */,
 				C1D06A6F2B256D7800DE13CC /* ContentView.swift */,
 				C1D06A712B256D7800DE13CC /* Item.swift */,
+				C16E14BD2B27086100398B73 /* Grid.swift */,
+				C16E14C12B270A3E00398B73 /* Array+Identifiable.swift */,
+				C16E14BF2B2708B600398B73 /* GridLayout.swift */,
 				C1D06A732B256D7900DE13CC /* Assets.xcassets */,
 				C1D06A782B256D7900DE13CC /* MineSweeper.entitlements */,
 				C1D06A752B256D7900DE13CC /* Preview Content */,
@@ -144,7 +153,10 @@
 			files = (
 				C1D06A702B256D7800DE13CC /* ContentView.swift in Sources */,
 				C1D06A722B256D7800DE13CC /* Item.swift in Sources */,
+				C16E14C02B2708B600398B73 /* GridLayout.swift in Sources */,
 				C1D06A6E2B256D7800DE13CC /* MineSweeperApp.swift in Sources */,
+				C16E14BE2B27086100398B73 /* Grid.swift in Sources */,
+				C16E14C22B270A3E00398B73 /* Array+Identifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

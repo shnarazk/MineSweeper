@@ -13,7 +13,16 @@ struct ContentView: View {
     @Query private var items: [Item]
 
     var body: some View {
-        NavigationSplitView {
+        ForEach(0...8, id: \.self) {y in
+            HStack {
+                ForEach(0...8, id: \.self) {x in
+                    // Rectangle()
+                    Text("?").font(.title).padding(1)
+                }
+            }
+        }
+        // Rectangle().padding(30)
+        // NavigationSplitView {
             List {
                 ForEach(items) { item in
                     NavigationLink {
@@ -24,7 +33,7 @@ struct ContentView: View {
                 }
                 .onDelete(perform: deleteItems)
             }
-            .navigationSplitViewColumnWidth(min: 180, ideal: 200)
+           // .navigationSplitViewColumnWidth(min: 180, ideal: 200)
             .toolbar {
                 ToolbarItem {
                     Button(action: addItem) {
@@ -32,9 +41,9 @@ struct ContentView: View {
                     }
                 }
             }
-        } detail: {
-            Text("Select an item")
-        }
+        // } detail: {
+        //    Text("Select an item")
+        //}
     }
 
     private func addItem() {
